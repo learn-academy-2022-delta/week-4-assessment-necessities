@@ -1,7 +1,13 @@
 # ASSESSMENT 4: Ruby Coding Practical Questions
 # MINASWAN ✌️
 
+#creator is nice so we are nice 
+
 # --------------------1) Create a method that takes in a number and determines if the number is even or odd. Use the test variables provided.
+
+# i will declare a method call even_or_odd
+# it wil take one integer input; called input_num
+#it will return a string stateing even or odd
 
 num1 = 7
 # Expected output: '7 is odd'
@@ -9,6 +15,27 @@ num2 = 42
 # Expected output: '42 is even'
 num3 = 221
 # Expected output: '221 is odd'
+
+
+def even_or_odd input_num 
+    if input_num % 2 == 0
+        p 'even'
+    elsif input_num % 2 == 1
+        p 'odd'
+    else 
+        p 'unknown'
+    end
+end
+
+even_or_odd num1 
+even_or_odd num2
+even_or_odd num3
+
+
+
+
+
+
 
 
 
