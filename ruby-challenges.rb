@@ -48,6 +48,20 @@ album2 = 'Sgt Pepper'
 album3 = 'Abbey Road'
 # Expected output: 'bby Rd'
 
+# ill declare a function named remove_vowels, it will take one input named input string, then i will use a method to remove all the vowels
+
+
+def remove_vowels input_string
+
+    return_array = input_string.delete "AEIOUaeiou"
+    
+
+end
+
+p remove_vowels album2
+
+
+
 
 
 # -------------------3) Create a method that takes in a string and checks if the string is a palindrome. A palindrome is the same word spelled forward or backward. Use the test variables provided.
@@ -58,3 +72,15 @@ palindrome_tester2 = 'LEARN'
 # Expected output: 'LEARN is not a palindrome'
 palindrome_tester3 = 'Rotator'
 # Expected output: 'Rotator is a palindrome'
+
+
+def checker input_string
+    if input_string.downcase == input_string.downcase.reverse 
+        p "#{input_string} is a palindrome"
+    else 
+        p "#{input_string} is not a palindrome"
+    
+    end
+end
+
+checker palindrome_tester1
